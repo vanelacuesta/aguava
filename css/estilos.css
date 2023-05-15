@@ -10,6 +10,7 @@
 	height: 13vh;
 	position: fixed;
 	top: 0;
+	z-index: 99999999999;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -26,8 +27,7 @@ nav ul {
 	padding: 0;
 	display: flex;
 }
-
-nav li {
+nav ul li {
 	margin: 1vw;
 }
 
@@ -44,7 +44,7 @@ nav li a:hover{
 
 #mainIndex{
 	width: auto;
-	margin: 10px;
+	margin: 1px;
 	color: #003958;
 	display: flex;
 	height: 50%;
@@ -54,6 +54,9 @@ nav li a:hover{
 main h1 {
 	margin: 0;
 	font-size: 36px;
+}
+#imagenesEnMain{
+	width: 100vw;
 }
 .carruselCss {
     width: 70vw;
@@ -65,6 +68,7 @@ main h1 {
 @media (max-width : 420px) {
 	.carruselCss{
 		width: 100vw;
+		margin: 0;
 		margin-top: 2vh;
 	}
 }
@@ -73,6 +77,7 @@ main h1 {
     align-items: center;
     justify-content: center;
     padding: 0;
+	margin: 0;
     width: 400%;
     height: auto;
     animation: carruselConCss 16s infinite alternate ease-in-out;
@@ -153,10 +158,23 @@ footer {
 	align-content: start;
 	justify-items: start;
 }
+@media (max-width:380px) {
+	.contenedorFooter{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
 footer p {
 	margin: 0;
 	width: 40vw;
 }
+@media (max-width:380px) {
+	footer p{
+		width: 90vw;
+	}
+}
+
 footer .contenedorFooter .footerBloqueDos{
 	display: grid;
 	grid-template-columns: 1fr;
@@ -167,9 +185,18 @@ footer .contenedorFooter .footerBloqueDos{
 	height: auto;
 	border-radius: 10px;
 }
+@media (max-width:380px) {
+	.mapa{
+		width: 90vw;
+	}
+}
 /* Estilo contacto */
-.textoMain{
+#mainIndex{
+	width: 100vw;
+}
+.textoEnMain{
 	color: #0077b6;
+	margin: 14px;
 }
 .formulario {
     display: flex;
