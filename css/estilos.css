@@ -233,7 +233,7 @@ footer .contenedorFooter .footerBloqueDos{
 .contenedor{
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -303,7 +303,7 @@ footer .contenedorFooter .footerBloqueDos{
     font-size: 1.3rem;
 }
 .contenedor figure .capa p{
-    color: rgb(2, 57, 115);
+    color: rgb(3, 47, 95);
     font-size: 1.3rem;
     line-height: 1.2;
     width: 100%;
@@ -370,7 +370,7 @@ footer .contenedorFooter .footerBloqueDos{
    }
    .whatsapp img {
     width: 69px; 
-    opacity: 0.6;
+    opacity: 0.8;
     animation: atencionboton 2s;
     animation-iteration-count: 3;
     animation-delay: 5s;
@@ -382,4 +382,11 @@ footer .contenedorFooter .footerBloqueDos{
         {transform: scale(1.4);}
     100%
         {transform: scale(1);}
+}
+.cadaMarca{
+	text-align: center;
+
+}
+.cadaMarca li{
+	list-style: none;
 }
