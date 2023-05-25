@@ -159,18 +159,19 @@ footer {
 	align-content: start;
 	justify-items: start;
 }
-@media (max-width:380px) {
+@media (max-width:768px) {
 	.contenedorFooter{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		justify-items: center;
 	}
 }
 footer p {
 	margin: 0;
 	width: 40vw;
 }
-@media (max-width:380px) {
+@media (max-width:768px) {
 	footer p{
 		width: 90vw;
 	}
@@ -190,7 +191,7 @@ footer .contenedorFooter .footerBloqueDos{
 	height: auto;
 	border-radius: 10px;
 }
-@media (max-width:380px) {
+@media (max-width:768px) {
 	.mapa{
 		width: 90vw;
 	}
@@ -201,13 +202,18 @@ footer .contenedorFooter .footerBloqueDos{
 	margin-top: 12vh;
 	color: #0077b6;
 }
+@media (max-width:768px) {
+	.main_space{
+		margin-top: 15vh;
+	}
+}
 .textoContacto{
 	margin: 14px;
 	padding-top: 2vh;
 }
 .main_space h2{
 	margin: 12px;
-	padding-left: 12px;
+	padding-left: 20px;
 }
 .formulario {
     display: flex;
@@ -224,24 +230,128 @@ footer .contenedorFooter .footerBloqueDos{
 	width: 50vw;
 }
 /* Estilo Materiales */
-
 .contenedor{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+    gap: 5px;
+    padding-top: 1vh;
 }
-.contenedor figure img{
-	width: 20vw;
-	margin: 5px;
-	border-radius: 3px;
-	border: rgb(0, 119, 182) 1px solid;
+@media(max-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;   
+    }
+} 
+.contenedor figure{
+    position:relative;
+    cursor: pointer;
+    width: 21vw;
+    overflow: hidden;
+    border-radius: 10px;
 	box-shadow: rgba(0, 119, 182, 0.3) 3px 5px;
 }
+@media (max-width: 768px) {
+    .contenedor figure{
+        width: 40vw;
+    }
+}
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(248, 131, 28, 0.3) 3px 5px;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 1vh;
+    margin-bottom: 0.5px;
+    font-size: 1.7rem;
+}
+@media (max-width: 767px){
+    .contenedor figure:hover > .capa h3{
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+}
+.contenedor figure:hover > img{
+    transform: scale(1.4);
+}
+.contenedor figure .capa h3{
+    color: rgb(3, 0, 89);
+    transition: all 400ms ease-out;
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+.contenedor figure .capa p{
+    color: rgb(2, 57, 115);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+}
+@media (max-width: 419px){
+    .contenedor figure .capa p{
+        font-size: 1rem;
+        line-height:1;
+        margin-top: 1px;
+    }
+}
+@media (min-width: 420px){
+    .contenedor figure .capa p{
+        font-size: 1.2rem;
+        line-height:1;
+        margin-top: 1px;
+    }
+}
+@media (min-width: 520px){
+    .contenedor figure .capa p{
+        font-size: 1.7rem;
+        line-height:1;
+        margin-top: 1px;
+    }
+}
+@media (min-width: 766px){
+    .contenedor figure .capa p{
+        font-size: 1.9rem;
+        line-height:1;
+        margin-top: 1px;
+    }
+}
+@media (min-width: 880px){
+    .contenedor figure .capa p{
+        font-size: 1.2rem;
+        line-height:1;
+        margin-top: 1px;
+    }
+}
+
 .espacioSection{
 	padding-top: 5vh;
 }
 .botonVerMas{
 	text-align: center;
+	margin-top: 3vh;
 	margin-bottom: 3vh;
 }
 .botonVerMas a{
@@ -250,4 +360,26 @@ footer .contenedorFooter .footerBloqueDos{
 	color: whitesmoke;
 	padding: 1vh;
 	text-decoration: none;
+}
+/* Boton de Whatsapp */
+.whatsapp {
+    position: fixed; 
+    bottom: 16vh; 
+    right: 8vw;
+    z-index:999999999;
+   }
+   .whatsapp img {
+    width: 69px; 
+    opacity: 0.6;
+    animation: atencionboton 2s;
+    animation-iteration-count: 3;
+    animation-delay: 5s;
+}
+@keyframes atencionboton {
+    0%
+        {transform: scale(1);}
+    50%
+        {transform: scale(1.4);}
+    100%
+        {transform: scale(1);}
 }
