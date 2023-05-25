@@ -196,12 +196,18 @@ footer .contenedorFooter .footerBloqueDos{
 	}
 }
 /* Estilo contacto */
-#mainIndex{
+.main_space{
 	width: 100vw;
-}
-.textoEnMain{
+	margin-top: 12vh;
 	color: #0077b6;
+}
+.textoContacto{
 	margin: 14px;
+	padding-top: 2vh;
+}
+.main_space h2{
+	margin: 12px;
+	padding-left: 12px;
 }
 .formulario {
     display: flex;
