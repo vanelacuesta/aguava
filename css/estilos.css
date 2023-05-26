@@ -283,7 +283,7 @@ footer .contenedorFooter .footerBloqueDos{
     visibility: visible;
 }
 .contenedor figure:hover > .capa h3{
-    margin-top: 1vh;
+    margin-top: 3vh;
     margin-bottom: 0.5px;
     font-size: 1.7rem;
 }
@@ -294,7 +294,7 @@ footer .contenedorFooter .footerBloqueDos{
     }
 }
 .contenedor figure:hover > img{
-    transform: scale(1.4);
+    transform: scale(1.5);
 }
 .contenedor figure .capa h3{
     color: rgb(3, 0, 89);
@@ -309,14 +309,14 @@ footer .contenedorFooter .footerBloqueDos{
     line-height: 1.2;
     width: 100%;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 8px;
 	font-family: 'Inconsolata', monospace;
 }
 @media (max-width: 419px){
     .contenedor figure .capa p{
         font-size: 1rem;
         line-height:1;
-        margin-top: 1px;
+        margin-top: 3px;
     }
 }
 @media (min-width: 420px){
