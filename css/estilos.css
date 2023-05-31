@@ -180,6 +180,10 @@ footer {
 		justify-items: center;
 	}
 }
+.contenedorFooter .footerBloqueUno{
+    width: 100vw;
+    overflow: hidden;
+}
 footer p {
 	margin: 0;
 	width: 40vw;
@@ -393,9 +397,13 @@ footer .contenedorFooter .footerBloqueDos{
 .cadaMarca{
 	text-align: center;
     height: 10vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 .cadaMarca li{
 	list-style: none;
     height: 10vh;
     text-align: center;
+    padding: 2vw;
 }
