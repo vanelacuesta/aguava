@@ -390,18 +390,12 @@ footer .contenedorFooter .footerBloqueDos{
     animation-iteration-count: 3;
     animation-delay: 5s;
 }
-@keyframes atencionboton {
-    0%
-        {transform: scale(1);}
-    50%
-        {transform: scale(1.4);}
-    100%
-        {transform: scale(1);}
-}
 .cadaMarca{
 	text-align: center;
-
+    height: 10vh;
 }
 .cadaMarca li{
 	list-style: none;
+    height: 10vh;
+    text-align: center;
 }
