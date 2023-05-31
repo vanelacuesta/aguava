@@ -16,6 +16,14 @@
 	justify-content: space-between;
 	align-items: flex-end;
 }
+@media (max-width:820px) {
+    .encabezado{
+        display: none;
+    }
+}
+.mi-nav-bt{
+    background-color:rgba(0, 119, 182, 0.9);
+}
 .encabezado .imgLogo{
 	padding: 1vw 1vh;
 }
@@ -51,6 +59,11 @@ nav li a:hover{
 	height: 50%;
 	flex-direction: column-reverse;
 	padding-top: 10vh;
+}
+@media (max-width:821px){
+    #mainIndex{
+        padding-top: 60px;
+    }
 }
 main h1 {
 	margin: 0;
