@@ -184,6 +184,19 @@ footer {
     width: 100vw;
     overflow: hidden;
 }
+.cadaMarca{
+	text-align: center;
+    height: 10vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.cadaMarca li{
+	list-style: none;
+    height: 10vh;
+    text-align: center;
+    padding: 2vw;
+}
 footer p {
 	margin: 0;
 	width: 40vw;
@@ -393,17 +406,4 @@ footer .contenedorFooter .footerBloqueDos{
     animation: atencionboton 2s;
     animation-iteration-count: 3;
     animation-delay: 5s;
-}
-.cadaMarca{
-	text-align: center;
-    height: 10vh;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.cadaMarca li{
-	list-style: none;
-    height: 10vh;
-    text-align: center;
-    padding: 2vw;
 }
