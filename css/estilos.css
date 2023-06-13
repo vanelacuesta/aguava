@@ -3,10 +3,13 @@
 	margin: 0;
 }
 /* Estilos para el encabezado */
+header{
+    width: 100vw;
+}
 .encabezado {
 	background-color: rgba(0, 119, 182, 0.9);
 	color: whitesmoke;
-	width: 100%;
+    width: 100%;
 	height: 13vh;
 	position: fixed;
 	top: 0;
@@ -52,7 +55,7 @@ nav li a:hover{
 /* Estilos para el cuerpo */
 
 #mainIndex{
-	width: auto;
+	width: 100vw;
 	margin: 1px;
 	color: #003958;
 	display: flex;
@@ -71,53 +74,6 @@ main h1 {
 }
 #imagenesEnMain{
 	width: 100vw;
-}
-.carruselCss {
-    width: 70vw;
-    height: auto;
-    margin: 10px auto 0;
-	border-radius: 10px;
-	overflow: hidden;
-}
-@media (max-width : 420px) {
-	.carruselCss{
-		width: 100vw;
-		margin: 0;
-		margin-top: 2vh;
-	}
-}
-.carruselCss ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-	margin: 0;
-    width: 400%;
-    height: auto;
-    animation: carruselConCss 16s infinite alternate ease-in-out;
-    animation-delay: 0ms;
-    animation-iteration-count: infinite;
-}
-.carruselCss ul li {
-    width: 100%;
-    list-style: none;
-}
-.carruselCss img {
-    width: 100%;
-	border-radius: 10px;
-}
-@keyframes carruselConCss {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    24% {margin-left: -100%;}
-    44% {margin-left: -100%;}
-
-    48% {margin-left: -200%;}
-    68% {margin-left: -200%;}
-
-    72% {margin-left: -300%;}
-    100% {margin-left: -300%;}    
 }
  .textoSection {
 	font-size: 24px;
@@ -180,6 +136,9 @@ footer {
 		justify-items: center;
 	}
 }
+footer{
+    width: 100vw;
+}
 .contenedorFooter .footerBloqueUno{
     width: 100vw;
     overflow: hidden;
@@ -187,7 +146,7 @@ footer {
 .cadaMarca{
 	text-align: center;
     height: 10vh;
-    display: flex;
+    /* display: flex; */
     margin: 0;
     padding: 0;
 }
@@ -214,10 +173,10 @@ footer p {
 footer .contenedorFooter .footerBloqueDos{
 	display: grid;
 	grid-template-columns: 1fr;
-	justify-items: end;
+	justify-items: center;
 }
 .mapa {
-	width: 40vw;
+	width: 30vw;
 	height: auto;
 	border-radius: 10px;
 }
@@ -227,14 +186,16 @@ footer .contenedorFooter .footerBloqueDos{
 	}
 }
 /* Estilo contacto */
+
 .main_space{
 	width: 100vw;
 	margin-top: 12vh;
 	color: #0077b6;
+    margin: 1vw;
 }
 @media (max-width:768px) {
 	.main_space{
-		margin-top: 15vh;
+		margin-top: 8vh;
 	}
 }
 .textoContacto{
@@ -242,7 +203,7 @@ footer .contenedorFooter .footerBloqueDos{
 	padding-top: 2vh;
 }
 .main_space h2{
-	margin: 12px;
+	margin: 5vw;
 	padding-left: 20px;
 }
 .formulario {
