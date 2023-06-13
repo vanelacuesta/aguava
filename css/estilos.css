@@ -191,11 +191,11 @@ footer .contenedorFooter .footerBloqueDos{
 	width: 100vw;
 	margin-top: 12vh;
 	color: #0077b6;
-    margin: 1vw;
+    margin: 2vw;
 }
 @media (max-width:768px) {
 	.main_space{
-		margin-top: 8vh;
+		margin-top: 10vh;
 	}
 }
 .textoContacto{
