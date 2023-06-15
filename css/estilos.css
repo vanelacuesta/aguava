@@ -9,7 +9,7 @@ header{
 .encabezado {
 	background-color: rgba(0, 119, 182, 0.9);
 	color: whitesmoke;
-    width: 100%;
+    width: 100vw;
 	height: 13vh;
 	position: fixed;
 	top: 0;
@@ -61,17 +61,21 @@ nav li a:hover{
 	display: flex;
 	height: 50%;
 	flex-direction: column-reverse;
-	padding-top: 10vh;
+	padding-top: 12vh;
 }
 @media (max-width:821px){
     #mainIndex{
         padding-top: 60px;
     }
 }
-main h1 {
-	margin: 0;
-	font-size: 36px;
+.textoEnMain{
+    width: 100vw;
+    margin-left: 2vw;
 }
+.textoEnMain {
+    width: 90vw;
+}
+
 #imagenesEnMain{
 	width: 100vw;
 }
@@ -157,6 +161,7 @@ footer{
     padding: 2vw;
 }
 footer p {
+    text-align: center;
 	margin: 0;
 	width: 40vw;
 }
@@ -189,9 +194,9 @@ footer .contenedorFooter .footerBloqueDos{
 
 .main_space{
 	width: 100vw;
-	margin-top: 12vh;
+	margin-top: 13vh;
 	color: #0077b6;
-    margin: 2vw;
+    margin-left: 2vw;
 }
 @media (max-width:768px) {
 	.main_space{
