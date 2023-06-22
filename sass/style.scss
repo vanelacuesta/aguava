@@ -1,0 +1,62 @@
+$completo:100%;
+$bgtcolor:rgba(0, 119, 182, 0.9);
+$h1color: #003958;
+$gradienteamyaz:linear-gradient(80deg,#0077b6 60%, rgb(250, 185, 64));
+$roboto: 'Roboto', sans-serif;
+@use '../sass/variabless.scss';
+
+
+/* aqui empiezan los estilos */
+header{
+    .mi-nav-bt{
+        background-color: $bgtcolor;
+        overflow: hidden;
+    }
+    .encabezado{
+        background-color: $bgtcolor;
+        position: fixed;
+        z-index: 99999999999;
+        top: 0;
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: hidden;
+        height: 13vh;
+        @media (max-width:820px) {
+            display: none;
+        }
+        nav{
+            ul{
+                list-style: none;
+                display: flex;
+                li{
+                    margin-right: 1rem;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    :hover{
+                        color:rgb(250, 185, 64);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+main{
+    width: $completo;
+    .main_space{
+        width: $completo;
+        overflow: hidden;
+        margin-top: 13vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+footer{
+    width: $completo;
+}

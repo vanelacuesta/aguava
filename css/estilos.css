@@ -19,6 +19,7 @@ header{
 	justify-content: space-between;
 	align-items: flex-end;
 }
+
 @media (max-width:767px) {
     .encabezado{
         display: none;
@@ -30,6 +31,7 @@ header{
 .encabezado .imgLogo{
 	padding: 1vw 1vh;
 }
+
 .encabezado .imgLogo img{
     height: 10vh;
 }
@@ -197,6 +199,8 @@ footer .contenedorFooter .footerBloqueDos{
 	margin-top: 13vh;
 	color: #0077b6;
     margin-left: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 @media (max-width:768px) {
 	.main_space{
