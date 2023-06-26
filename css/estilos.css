@@ -48,15 +48,16 @@ nav ul li {
 nav a {
 	color: #fff;
 	text-decoration: none;
+    font-size: 1.2rem;
 }
 
-nav li a:hover{
+nav a:hover{
 	color: rgb(250, 185, 64);
 }
 
 /* Estilos para el cuerpo */
 
-#mainIndex{
+main{
 	width: 100vw;
 	margin: 1px;
 	color: #003958;
