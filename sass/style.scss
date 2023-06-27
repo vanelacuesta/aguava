@@ -64,7 +64,9 @@ main{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-        
+        h2{
+            text-align: center;
+        }
     }
     @media (max-width:$celular) {
         margin-top:10vh;
@@ -93,8 +95,17 @@ section{
             height: auto;
             gap: 5px;
             padding-top: 1vh;
-        @media (max-width:$tablet) {
+        @media (max-width:$celular) {
             grid-template-columns: 1fr 1fr;
+            #tostadora-philips:nth-child(n){
+                grid-column: 1/3;
+            }
+            #termotanque-james:nth-child(n){
+                grid-column: 1/3;
+            }
+            #desmalezadora:nth-child(n){
+                grid-column: 1/3;
+            }
         }    
         @media(min-width:$celular) and (max-width:$tablet) {
             grid-template-columns: 1fr 1fr 1fr;
@@ -118,7 +129,7 @@ section{
                     top: 0;
                     width: 100%;
                     height: 100%;
-                    background: rgba(234, 123, 4, 0.3) 3px 5px;
+                    background: rgba(255, 177, 94, 0.7) 3px 5px;
                     transition: all 600ms ease-out;
                     opacity: 0;
                     visibility: hidden;
