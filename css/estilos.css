@@ -57,7 +57,7 @@ nav a:hover{
 
 /* Estilos para el cuerpo */
 
-main{
+#mainIdex{
 	width: 100vw;
 	margin: 1px;
 	color: #003958;
@@ -66,9 +66,9 @@ main{
 	flex-direction: column-reverse;
 	padding-top: 12vh;
 }
-@media (max-width:821px){
+@media (max-width:920px){
     #mainIndex{
-        padding-top: 60px;
+        padding-top: 1vh;
     }
 }
 .textoEnMain{
@@ -94,7 +94,7 @@ main{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	justify-items: center;
 }
-@media (max-width : 420px) {
+@media (max-width : 920px) {
 	.contenedorSection{
 		grid-template-columns: 1fr 1fr;
 	}
@@ -106,9 +106,9 @@ main{
 	border-radius: 5px;
 	background: linear-gradient(80deg,#0077b6 60%, rgb(250, 185, 64));
 }
-@media (max-width:420px){
+@media (max-width:920px){
 	.imgSection{
-		width: 40vw;
+		width: 42vw;
 	}
 }
 .imgSection img {
@@ -121,78 +121,7 @@ main{
 }
 
 /* Estilos para el pie de página */
-footer {
-	width: 100vw;
-	background-color: #0077b6;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	font-size: 1rem;
-}
-.contenedorFooter {
-	display: flex;
-	justify-content: space-around;
-	align-content: start;
-	justify-items: start;
-}
-@media (max-width:768px) {
-	.contenedorFooter{
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-content: center;
-		justify-items: center;
-	}
-}
-footer{
-    width: 100vw;
-}
-.contenedorFooter .footerBloqueUno{
-    width: 100vw;
-    overflow: hidden;
-}
-.cadaMarca{
-	text-align: center;
-    height: 10vh;
-    /* display: flex; */
-    margin: 0;
-    padding: 0;
-}
-.cadaMarca li{
-	list-style: none;
-    height: 10vh;
-    text-align: center;
-    padding: 2vw;
-}
-footer p {
-    text-align: center;
-	margin: 0;
-	width: 40vw;
-}
-@media (max-width:768px) {
-	footer p{
-		width: 90vw;
-	}
-}
-.fin {
-	text-align: center;
-	font-size: 0.7rem;
-	width: 100%;
-}
-footer .contenedorFooter .footerBloqueDos{
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-}
-.mapa {
-	width: 30vw;
-	height: auto;
-	border-radius: 10px;
-}
-@media (max-width:768px) {
-	.mapa{
-		width: 90vw;
-	}
-}
+
 /* Estilo contacto */
 
 .main_space{

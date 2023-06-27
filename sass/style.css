@@ -116,8 +116,8 @@ section .productosCatalogo .contenedor figure {
   box-shadow: rgba(0, 119, 182, 0.3) 3px 5px;
 }
 section .productosCatalogo .contenedor figure img {
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   transition: all 400ms ease-out;
   will-change: transform;
@@ -127,11 +127,12 @@ section .productosCatalogo .contenedor figure .capa {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(198, 151, 12, 0.3) 3px 5px;
+  background: rgba(234, 123, 4, 0.3) 3px 5px;
   transition: all 600ms ease-out;
   opacity: 0;
   visibility: hidden;
   text-align: center;
+  border-radius: 10px;
 }
 section .productosCatalogo .contenedor figure .capa h3 {
   color: rgb(3, 0, 89);
@@ -295,7 +296,7 @@ footer .contenedor_footer .redes .fb {
 }
 footer .contenedor_footer .redes .fb img {
   width: 7vw;
-  border-radius: 40px;
+  border-radius: 45px;
 }
 footer .contenedor_footer .redes .fb img:hover {
   background-image: url(../img/bgfc.png);
@@ -307,7 +308,7 @@ footer .contenedor_footer .redes .ig {
 }
 footer .contenedor_footer .redes .ig img {
   width: 7vw;
-  border-radius: 40px;
+  border-radius: 45px;
 }
 footer .contenedor_footer .redes .ig img:hover {
   background-image: url(../img/bgig.png);
